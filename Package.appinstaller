@@ -1,14 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <AppInstaller
 	Uri="https://tcon47.github.io/Package.appinstaller"
-	Version="20.2.14.0" xmlns="http://schemas.microsoft.com/appx/appinstaller/2017/2">
+	Version="20.2.15.0" xmlns="http://schemas.microsoft.com/appx/appinstaller/2017/2">
 	<MainBundle
 		Name="WindowsFormsApp8"
-		Version="20.2.14.0"
+		Version="20.2.15.0"
 		Publisher="CN=KP Management, O=KP Management LLC, C=US"
-		Uri="https://tcon47.github.io/Package_20.2.14.0_Debug_Test/Package_20.2.14.0_AnyCPU_Debug.msixbundle" />
+		Uri="https://tcon47.github.io/Package_20.2.15.0_Debug_Test/Package_20.2.15.0_AnyCPU_Debug.msixbundle" />
 	<UpdateSettings>
 		<OnLaunch
-			HoursBetweenUpdateChecks="0" />
+			HoursBetweenUpdateChecks="0"
+			ShowPrompt="true" />
 	</UpdateSettings>
 </AppInstaller>
