@@ -29,13 +29,12 @@
         // Detects OS based on user agent.
         function DetectUserAgent() {
 
-            //alert(navigator.userAgent);
+            alert(navigator.userAgent);
 
             // Hide Android div when viewing from an Apple device.
             if (
                 (navigator.userAgent.match(/iPhone/i)) ||
                 (navigator.userAgent.match(/iPad/i)) ||
-                /*(navigator.userAgent.match(/safari/i)) ||*/
                 (navigator.vendor && navigator.vendor.indexOf('Apple') > -1) ||
                 (navigator.userAgent.match(/macintosh/i))) {
 
