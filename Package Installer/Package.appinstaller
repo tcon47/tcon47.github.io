@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AppInstaller
+	Uri="file:///C:/temp/WindowsFormApp8 MSIX/Package.appinstaller"
+	Version="20.3.37.0" xmlns="http://schemas.microsoft.com/appx/appinstaller/2018">
+	<MainBundle
+		Name="238570a8-4102-4a56-97fb-3a8c1884bdb3"
+		Version="20.3.37.0"
+		Publisher="CN=TCon47"
+		Uri="file:///C:/temp/WindowsFormApp8 MSIX/Package_20.3.37.0_Debug_Test/Package_20.3.37.0_x64_Debug.msixbundle" />
+	<UpdateSettings>
+		<OnLaunch
+			HoursBetweenUpdateChecks="0"
+			ShowPrompt="true"
+			UpdateBlocksActivation="true" />
+	</UpdateSettings>
+</AppInstaller>
