@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script type="text/javascript">
+
+        //alert(navigator.userAgent);
+
+        (function (window, document, undefined) {
+
+            // code that should be taken care of right away
+
+            window.onload = init;
+
+            function init() {
+                // the code to be called when the dom has loaded
+                // #document has its nodes
+                //alert("start");
+                DetectUserAgent();
+            }
+
+        })(window, document, undefined);
+
+        // Runs DectectUserAgent function on page load.
+        //window.onload = DetectUserAgent();
+
+        // Detects OS based on user agent.
+        function DetectUserAgent() {
+
+            //alert(navigator.userAgent);
+
+            // Hide Android div when viewing from an Apple device.
+            if (
+                (navigator.userAgent.match(/iPhone/i)) ||
+                (navigator.userAgent.match(/iPad/i)) ||
+                /*(navigator.userAgent.match(/safari/i)) ||*/
+                (navigator.vendor && navigator.vendor.indexOf('Apple') > -1) ||
+                (navigator.userAgent.match(/macintosh/i))) {
+
+                //alert(navigator.userAgent);
+                //alert(document.getElementById('androidDiv'));
+                document.getElementById('androidDiv').style.display = 'none';
+            }
+
+            // Hide Apple div when viewing from an Android device.
+            if ((navigator.userAgent.match(/Android/i))) {
+
+                //alert(navigator.userAgent);
+                document.getElementById('appleDiv').style.display = 'none';
+            }
+
+            // If you are checking for mobile or desktop, use the boolean mobile value:
+            //const isMobile = navigator.userAgentData.mobile;
+
+            // On-demand client-side JavaScript API
+            if (navigator.userAgentData) {
+                // use new hints
+            } else {
+                // fall back to user-agent string parsing
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="androidDiv" class="androidHeader">
+        <h1>Android Div</h1>
+
+    </div>
+    <div id="appleDiv" class="appleHeader">
+        <h1>Apple Div</h1>
+    </div>
+</body>
+</html>
